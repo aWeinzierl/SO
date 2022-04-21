@@ -1,0 +1,32 @@
+[package]
+name = "abc"
+version = "0.0.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1.17.0", features = ["sync", "rt", "macros", "rt-multi-thread"] }
+futures = { version = "0.3.21", features = []}
+tokio-stream = { version = "0.1.8", features = ["sync"] }
+async-broadcast = "0.4.0"
+
+[dependencies.windows]
+version = "0.35.0"
+features = [
+    "alloc",
+    "implement",
+    "ApplicationModel_Activation",
+    "UI_Core",
+    "UI_Xaml_Controls",
+    "UI_Xaml",
+    "Storage",
+    "Storage_Pickers",
+    "System",
+    "Win32_System_WinRT",
+    "Foundation_Collections",
+    "UI_Xaml_Controls_Primitives",
+    "Win32_Foundation",
+    "Win32_Storage_Packaging_Appx",
+    "Win32_System_Com",
+    "Win32_UI_Shell",
+    "Win32_UI_WindowsAndMessaging",
+]
